@@ -1,0 +1,505 @@
+[33mcommit 8b79cb95d8573bc933059ac5deaaee1fd81452d5[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Fri Nov 13 12:01:06 2015 -0800
+
+    update parameter value for sklearn 0.17
+    
+    sklearn 0.17 changes the class_weight argument value 'auto' to 'balanced'.
+
+[33mcommit dfa6953af8bcb38c24a03cd0fea79b4228c1a07b[m
+Merge: 81c2205 ee85027
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Wed Oct 21 11:39:50 2015 -0700
+
+    Merge pull request #18 from GageAmes/patch-1
+    
+    Check if scipy is installed in startup.py
+
+[33mcommit 81c22055437b03de2a18951e5eccc875ef2c39ff[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Mon Oct 19 17:54:03 2015 -0700
+
+    revert to base state
+    
+    previous commit accidentally included solution, reverting to original state
+
+[33mcommit f9c072086b28b9591faf677d31beca3d7eeb1660[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Wed Oct 14 01:27:57 2015 -0700
+
+    typos and grammar
+    
+    Modified some typos and grammar in docstrings and comments to make code
+    easier to follow.
+
+[33mcommit 458edfb65072cb4c72cc15902ad0b72d51d1455f[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Tue Oct 6 16:31:15 2015 -0700
+
+    improve pickle load/dump practices
+    
+    Use “with” syntax to load/dump final project pickles to make sure they
+    are properly closed after use.
+
+[33mcommit 126f267bf0510bc243b57c8e64cbd1900f0b4f76[m
+Merge: 7ea6837 cf1bccf
+Author: Jared Weed <jared@udacity.com>
+Date:   Wed Sep 9 18:24:55 2015 -0400
+
+    Merge pull request #24 from udacity/new-branch
+    
+    Removed orphaned code and added additional context for division by zero
+
+[33mcommit cf1bccf45d3d7d3031f7c5162f43bcf79e715884[m
+Author: Jared Weed <jared@knowlabs.com>
+Date:   Wed Sep 9 18:24:02 2015 -0400
+
+    Removed orphaned code and added additional context for division by zero
+
+[33mcommit 7ea683725a7069757f61150ac1561fc5e2540225[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Thu Aug 20 16:02:45 2015 -0700
+
+    updated instructions for final project
+    
+    Update poi_id.py with more instructions for tasks to be performed.
+
+[33mcommit 1059a96b8d092bbb64d5ff0e2b3da7369282acc7[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Mon Jul 27 10:17:25 2015 -0700
+
+    detect invalid predictions in tester.py
+    
+    Also clean up naive_bayes base script.
+
+[33mcommit 43ef66b20118ed71ea36c7b4961f75e7e9e1f770[m
+Author: adarsh0608 <adarsh108@gmail.com>
+Date:   Wed Jul 8 18:39:35 2015 -0700
+
+    initial commit
+
+[33mcommit ee85027e643ff9b75c0512b214d21cdd5aa4a62f[m
+Author: Gage Ames <GageAmes@users.noreply.github.com>
+Date:   Thu Jun 25 20:44:48 2015 -0700
+
+    Check if scipy is installed in startup.py
+    
+    scipy is a prerequisite of sklearn, so it needs to be installed as well.  Without this change, an `ImportError` will be thrown by `import sklearn` even if sklearn is installed.
+
+[33mcommit 140cc2152c2b437133bed61d525cd4626e4a93c7[m
+Merge: 7e0980f 2de84d8
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Mon Jun 22 12:47:39 2015 -0700
+
+    Merge pull request #17 from matt-haigh/master
+    
+    Update gitignore file and remove committed .pyc file
+
+[33mcommit 2de84d8df79742f43c8e82489985592a8b8ed537[m
+Author: Matt Haigh <matthew.haigh@opower.com>
+Date:   Mon Jun 22 15:36:34 2015 -0400
+
+    Update gitignore file and remove committed .pyc file
+
+[33mcommit 7e0980fc2e5365bfb28334372af7dbb3553bc8bc[m
+Merge: efa6e32 8670a39
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Wed Jun 17 11:48:38 2015 -0700
+
+    Merge pull request #16 from jaycode/patch-1
+    
+    Fix to ValueError: insecure string pickle
+
+[33mcommit 8670a39e78724d14febe3ae64f6f0db32dfc968d[m
+Author: Jay <teguhwpurwanto@gmail.com>
+Date:   Thu Jun 18 01:21:21 2015 +0700
+
+    Fix to ValueError: insecure string pickle
+    
+    In my machine, existing code caused error ValueError: insecure string pickle. This was caused by the size of words_file.
+    
+    To fix this, I use C++ implementation of pickle called cPickle.
+    
+    I hope this helps other students.
+
+[33mcommit efa6e3287a7682028a7bc2e8a8ac85b2baae4150[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Wed May 20 13:10:34 2015 -0700
+
+    Python 3 key order compatibility
+    
+    Modified sort_keys parameter to take string as input, to load in the
+    appropriate pickle file with key order.
+
+[33mcommit a554b9ce99844912eb75289a590f49e66256abe4[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Wed May 20 12:50:12 2015 -0700
+
+    Updated Enron e-mail corpus
+    
+    A number of e-mails were removed from the corpus in May 2015; file
+    paths are updated to account for changes.
+
+[33mcommit 8ae29637cae74c85315c65eef09088d39c582127[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Sun May 17 06:36:15 2015 -0700
+
+    update Python 3 compatibility notice
+    
+    Revised files for Python 3 compatibility for mini-projects reliant on
+    dictionary key order.
+
+[33mcommit 6cb6f1f3b16061888f08611c84314ec92cbe6caa[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Sun May 17 05:34:15 2015 -0700
+
+    Lesson 6 compatibility
+    
+    Previous modifications to remove ‘poi’ as removal criteria caused
+    incompatibility with lesson 6 mini-project; additional checks added to
+    regain compatibility.
+
+[33mcommit 8152779b067577ae70ae0c67ef33c59104f9ccc5[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Sat May 16 17:43:34 2015 -0700
+
+    reverting color setting and adding note
+    
+    Lesson 6 has all points colored the same to start; modification reverts the previous change but adds a note to make sure that point colors are also changed during the lesson.
+
+[33mcommit 960a6d180a4cc797a58faebcd6063e03440fcfb9[m
+Author: Sheng Kung Yi <shengkungmichaelyi@Shengs-MacBook-Air.local>
+Date:   Sat May 16 17:21:32 2015 -0700
+
+    enron key compatibility for Python 3
+    
+    Due to changes in dictionary key order in Python 3, a brief fix has
+    been created for students using Python 3 over Python 2.
+
+[33mcommit 15bd5c34926bf12069e600237037ad524766c79b[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Sun May 10 13:57:55 2015 -0700
+
+    reverting previous change
+
+[33mcommit 0f6118038ad60e8c863dce93d7395b3d8fe187e5[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Sun May 10 13:56:14 2015 -0700
+
+    Move .toarray() for consistency
+
+[33mcommit bfd3e51ccaa77180164de6652f491552e7516538[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Fri May 8 15:33:09 2015 -0700
+
+    ignore first column (poi) for zero- checks
+
+[33mcommit 812f6acb8da1865a50c7e39e04b3ad2b13c02797[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Fri May 8 15:07:41 2015 -0700
+
+    Update logic for appending points
+
+[33mcommit 70214088bc2ea14ee422d87c367b14160e21533a[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Fri May 1 11:33:22 2015 -0700
+
+    Move .toarray() to alleviate memory issues
+
+[33mcommit f4a266858b448a7d10cee3a0b78830356d70c71f[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Wed Mar 4 14:33:22 2015 -0800
+
+    corrected location of data files
+
+[33mcommit b452e9a42d507c000bf6d3068af425d9c0eda8fd[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Wed Feb 25 11:46:36 2015 -0800
+
+    Improve instructions for Lesson 13 mini-project.
+
+[33mcommit bf72b07a31ea2da6e7878f770e5c5107b00ae063[m
+Merge: 4614cc3 5dec3d4
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Wed Feb 11 16:18:21 2015 -0800
+
+    Merge pull request #10 from UdacityJeremy/master
+    
+    Add key sort flag in feature format and final project
+
+[33mcommit 5dec3d402b6974c5b059286c47b48ffd6e14ae5e[m
+Author: Jeremy Silver <jeremy@udacity.com>
+Date:   Wed Feb 11 15:30:24 2015 -0800
+
+    Add key sort flag in feature format and final project
+
+[33mcommit 4614cc363e7525efe7fc08b079e3919ce980c050[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Tue Feb 10 16:03:44 2015 -0800
+
+    remove redundant model fitting
+
+[33mcommit 93cbc9c9818d3373861760915d433b339e20b5ae[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Mon Feb 9 12:04:15 2015 -0800
+
+    point color typo
+
+[33mcommit 43a618c97ea3c536242e319bf7078ce127aa3ae9[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Mon Feb 9 10:29:04 2015 -0800
+
+    minor comment cleanup
+
+[33mcommit 58e73765e5a4f77ae0b20ff078ae072a2df9523b[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Sat Feb 7 14:23:41 2015 -0800
+
+    False / True Negatives typo corrected.
+
+[33mcommit 28f15d292fcbe3dd2e1e6ec97d0af2b3efa2da24[m
+Author: Sheng Kung Yi <shengkung@udacity.com>
+Date:   Fri Feb 6 14:37:10 2015 -0800
+
+    Undefined variable name corrected.
+
+[33mcommit 0b3d1877d90a6973680fd8128940de4c3ae0db82[m
+Merge: acfe00a 09f335d
+Author: Tairi <tairi@udacity.com>
+Date:   Mon Feb 2 16:43:42 2015 -0800
+
+    Merge pull request #6 from UdacityJeremy/master
+    
+    Update final project to use stratified shuffle split
+
+[33mcommit 09f335d6a8b8520281f114f1ab7e80c6ea0339eb[m
+Author: Jeremy Silver <jeremy@udacity.com>
+Date:   Mon Feb 2 12:37:24 2015 -0800
+
+    Refine results formatting
+
+[33mcommit acfe00affa267b9162f7432bbad86b7c98e6d344[m
+Author: Carl Ward <carl@udacity.com>
+Date:   Wed Jan 28 11:37:11 2015 -0800
+
+    change path to emails to match output of tools/startup.py
+
+[33mcommit 190901e4edf302613b5caf9471795a33237d90e4[m
+Author: Jeremy Silver <jeremy@udacity.com>
+Date:   Sun Jan 18 18:17:21 2015 -0800
+
+    Update final project instructions file
+    
+    There's one gotcha here, where I needed to change something in
+    feature_format.py. If you pickle/unpickle a dictionary, Python may
+    iterate over it in a different order. That means that unpacking the
+    dataset into feature/label vectors may happen in a different order, so
+    different observations will end up in different folds of the cross
+    validation. That means that the results of running the testing script
+    with the live version of the dataset is different from the
+    pickled/unpickled version. We now sort the keys before iterating over
+    them to ensure a consistent ordering.
+
+[33mcommit f6c333ea240c8698212df5d82ca865ef622099f5[m
+Author: Jeremy Silver <jeremy@udacity.com>
+Date:   Thu Jan 15 16:13:07 2015 -0800
+
+    Add advanced evaluation metrics
+
+[33mcommit 859590ea3d245d7b09d13bf53a8e9edbaacceed1[m
+Author: Jeremy Silver <jeremy@udacity.com>
+Date:   Thu Jan 15 15:56:46 2015 -0800
+
+    Switch final project to stratified shuffle split
+
+[33mcommit 981c7db4dc131e9097513e0e94873952b36cd672[m
+Merge: 3546abe 5c13066
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Sun Dec 7 22:53:00 2014 -0800
+
+    Merge pull request #3 from nmb10/master
+    
+    wrong path to enron emails fixed.
+
+[33mcommit 5c13066d4a3aea6fc7b39c8532345e1a518b3c11[m
+Author: Kazbek <nmb.ten@gmail.com>
+Date:   Tue Dec 2 16:18:16 2014 +0300
+
+    wrong path to enron emails fixed.
+
+[33mcommit 3546abe5c51f7dba7899afc01d76ea00d9c319fc[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Mon Dec 1 22:21:12 2014 -0800
+
+    adding overfit word and author files for feature selection
+
+[33mcommit dc95e88d57b7a4ebe7c6e2d3ba2901c8078949b5[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Nov 20 20:20:29 2014 -0800
+
+    changed outlier cleaner to run on training data, not all data
+
+[33mcommit 4b98b1bbbd9d3a1c33638982b6e5e01e916d6ac5[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Tue Nov 11 22:02:56 2014 -0800
+
+    adding fixed files
+
+[33mcommit 4b012574ef105a2937aeada8842a6bce4c4d279f[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Tue Nov 11 22:02:47 2014 -0800
+
+    adding fixed files
+
+[33mcommit 22e600a0518da23319657e55e5d801ccf8f09121[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Tue Nov 11 22:01:08 2014 -0800
+
+    fixing special characters in a few emails by address files
+
+[33mcommit b71748f9a2b1e24c085c558f4b94211861ec01bd[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Tue Nov 11 21:02:45 2014 -0800
+
+    course code corrected in README
+
+[33mcommit ac433aa38bfcfc02ac06ab3cc53ab5ceaf073356[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Mon Nov 10 07:28:14 2014 -0800
+
+    fixed bhatnagar total stock value
+
+[33mcommit 8cef0a77f2fbc327ed235291cb9728a530ed8b68[m
+Merge: 5b1d33c 0233d7d
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Nov 6 20:40:11 2014 -0800
+
+    Merge pull request #1 from udacity/fix-temp-counter
+    
+    Fix temp counter
+
+[33mcommit 0233d7d85743ec177f1ae7875abc3921f3e15268[m
+Author: cbuckey <caroline@udacity.com>
+Date:   Wed Nov 5 14:06:49 2014 -0800
+
+    Fix temp counter
+
+[33mcommit 5b1d33c5f6333d47706f4d69e34f10e35156c772[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Tue Nov 4 21:57:40 2014 -0800
+
+    updating starter code to use new files
+
+[33mcommit de7abee1a64325483e717d8d4e7e0168ae5fdae1[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Tue Nov 4 21:54:51 2014 -0800
+
+    adding email/authors datasets for feature selection MP
+
+[33mcommit e840ec9ccc576042b494891b11d4f95f22f8157d[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Sun Nov 2 15:48:01 2014 -0800
+
+    modified tester to do stratified k-fold CV
+
+[33mcommit 504214c917eef32395b875e6f7ccab41a9789d88[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Sun Nov 2 15:11:10 2014 -0800
+
+    modified tester to do stratified k-fold CV
+
+[33mcommit cad89e5ffec25eb0b5715275f0f7444b794abcc7[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Wed Oct 29 21:34:21 2014 -0700
+
+    removing need for parse_test.py
+
+[33mcommit d9513e8b24a53d04f9f5778337bac144330b3212[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Wed Oct 29 21:34:03 2014 -0700
+
+    removing need for parse_test.py
+
+[33mcommit 7fa8c3182214f24a0a68cd9f344765e96baf08db[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Sun Oct 12 17:18:09 2014 -0700
+
+    temp_counter to only run over 200 emails when developing text processing algorithm
+
+[33mcommit 838253dec724dc4135140ce8f28d65ca5a30befa[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Sun Oct 12 14:51:00 2014 -0700
+
+    change test_color to blue to be consistent with instructions
+
+[33mcommit ba8d0e2c1a3963061d44ba5292ee4753c7b3e9a9[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Oct 9 22:54:50 2014 -0700
+
+    adding train/test split to outlier regression
+
+[33mcommit 659a282e1332cd95e78429546dcdad0056432816[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 14:02:54 2014 -0700
+
+    final project student code all uploaded
+
+[33mcommit 4a1bd6a84243b9f14fbb4c2398ca6c6e407da044[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 13:50:45 2014 -0700
+
+    emails_by_address directory contains a bunch of lists of emails organized by to or from address
+
+[33mcommit c19213b0a8f25f9d3f943052a3dab55872f33a47[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 13:46:04 2014 -0700
+
+    find the signature words
+
+[33mcommit 5aabf3aa2dfdeef1c3299cd3516f13cb30596546[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 13:34:32 2014 -0700
+
+    decision tree mini-project
+
+[33mcommit f3890592b78f7d9636cf9a061df56335f2636e80[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 13:20:20 2014 -0700
+
+    evaluation and validation added:
+
+[33mcommit d4a496143f270f1027ccf789d4764ddb59d90a28[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 13:01:44 2014 -0700
+
+    choose-your-own code going in
+
+[33mcommit 194b3993f7be8b514af28b5ab5c68929144647c5[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 11:49:46 2014 -0700
+
+    eigenfaces up
+
+[33mcommit 64db0ae028c97d399a2c94248949e4ff31832e3e[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 11:13:15 2014 -0700
+
+    text processing code committed
+
+[33mcommit 4a97d954a8119d968e3b673f3b4c153a0cc76202[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 10:36:43 2014 -0700
+
+    k-means clustering code
+
+[33mcommit 82958a765c7632c5fa39ec6beb5b3ab8fa96892b[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Thu Sep 18 10:26:05 2014 -0700
+
+    outliers starter code going in
+
+[33mcommit dae839040850e3e8d5e20c3149fb6799e6f525f9[m
+Author: cmmalone <cmmalone.158@gmail.com>
+Date:   Wed Sep 17 22:23:34 2014 -0700
+
+    regression c
